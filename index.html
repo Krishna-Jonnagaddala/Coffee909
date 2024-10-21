@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Coffee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="logo-left"><a href="index.html"><img src="./images/logo_png.webp" width="140" height="140"></a></div>
+			<div class="menu-right">
+				<button class="menu-toggle">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21M3 18H21M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</button>
+				<ul class="primary-menu">
+					<li class="acitve-menu"><a href="#">HOME</a></li>
+					<li><a href="location.html">LOCATIONS</a></li>
+					<li><a href="contact-us.html">CONTACT US</a></li>
+					<li><a href="join-us.html">FRANCHISING</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="home-banner">
+	<img src="./images/home-img.jpeg">
+	<div class="banner-text">
+		<h1>COFFEE <span>IS OUR</span> <strong>PASSION</strong></h1>
+		<h3>Try it Today Love it forever</h3>
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>QUICK LINKS</h4>
+				<ul>
+					<li><a href="location.html">Locations</a></li>
+					<li><a href="contact-us.html">Contact us</a></li>
+					<li><a href="join-us.html">Franchising</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>LOCATION</h4>
+				<ul>
+					<li>Maryland Railway Station, Leytonstone High Road, London E15 1SA</li>
+				</ul>
+			</div>
+			<div class="footer-col col-social">
+				<h4>FIND US ON</h4>
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=61567128071752"><img src="./images/coffee-fb.webp"></a></li>
+					<li><a href="https://www.instagram.com/coffee909_uk/"><img src="./images/coffee-insta.webp"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		 $(".menu-toggle").click(function(){
+  $(".primary-menu").toggleClass("open");
+});
+	</script>
+</footer>
+</body>
+</html>

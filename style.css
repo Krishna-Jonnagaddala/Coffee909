@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'Rajdhani';
+  
+    src: url('./fonts/Rajdhani-Light.eot');
+    src: url('./fonts/Rajdhani-Light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rajdhani-Light.woff2') format('woff2'),
+         url('./fonts/Rajdhani-Light.woff') format('woff'),
+         url('./fonts/Rajdhani-Light.ttf')  format('truetype'),
+         url('./fonts/Rajdhani-Light.svg#Rajdhani Light') format('svg');
+           font-weight: 300;
+}
+@font-face {
+    font-family: 'Rajdhani';
+  
+    src: url('./fonts/Rajdhani-Regular.eot');
+    src: url('./fonts/Rajdhani-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rajdhani-Regular.woff2') format('woff2'),
+         url('./fonts/Rajdhani-Regular.woff') format('woff'),
+         url('./fonts/Rajdhani-Regular.ttf')  format('truetype'),
+         url('./fonts/Rajdhani-Regular.svg#Rajdhani') format('svg');
+           font-weight: 400;
+}
+@font-face {
+    font-family: 'Rajdhani';
+   
+    src: url('./fonts/Rajdhani-Medium.eot');
+    src: url('./fonts/Rajdhani-Medium.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rajdhani-Medium.woff2') format('woff2'),
+         url('./fonts/Rajdhani-Medium.woff') format('woff'),
+         url('./fonts/Rajdhani-Medium.ttf')  format('truetype'),
+         url('./fonts/Rajdhani-Medium.svg#Rajdhani Medium') format('svg');
+          font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+  
+    src: url('./fonts/Rajdhani-SemiBold.eot');
+    src: url('./fonts/Rajdhani-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rajdhani-SemiBold.woff2') format('woff2'),
+         url('./fonts/Rajdhani-SemiBold.woff') format('woff'),
+         url('./fonts/Rajdhani-SemiBold.ttf')  format('truetype'),
+         url('./fonts/Rajdhani-SemiBold.svg#Rajdhani SemiBold') format('svg');
+           font-weight: 600;
+}
+@font-face {
+    font-family: 'Rajdhani';
+  
+    src: url('./fonts/Rajdhani-Bold.eot');
+    src: url('./fonts/Rajdhani-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rajdhani-Bold.woff2') format('woff2'),
+         url('./fonts/Rajdhani-Bold.woff') format('woff'),
+         url('./fonts/Rajdhani-Bold.ttf')  format('truetype'),
+         url('./fonts/Rajdhani-Bold.svg#Rajdhani') format('svg');
+           font-weight: 700;
+}
+
+    body { margin: 0px; padding: 0px; background-color: #000; color: #c7c7c7; font-family: 'Rajdhani'; font-size: 16px; font-weight: 400; }
+        img { max-width: 100%; height: auto; }
+        * { box-sizing: border-box; margin: 0px; padding: 0px; }
+        .container {
+    max-width: calc(100% - 110px);
+    width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+header .row {
+    align-items: center;
+}
+.menu-right {
+    margin-left: auto;
+}
+ul.primary-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+ul.primary-menu li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.primary-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+ul.primary-menu li.acitve-menu a ,
+ul.primary-menu li a:hover {color: #00444C;}
+
+.home-banner, .home-banner img {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+.banner-text h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 2.4px;
+    color: #fff;
+    line-height: normal;
+    margin: 0;
+}
+.banner-text h1 span {
+    font-size: 60px;
+}
+.banner-text h1 strong {
+    font-size: 100px;
+    color: #00444C;
+}
+.banner-text h3 {
+    font-style: italic;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: normal;
+}
+.banner-text {
+    position: absolute;
+    left: 26vw;
+    top: 8vw;
+}
+footer  { display: inline-block; width: 100%; padding-top: 15px; padding-bottom: 30px; }
+footer  .container {
+    width: 700px;
+}
+.footer-col {
+    width: 33.333%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    margin: 0;
+    padding: 0;
+    color: #00444C;
+    font-size: 25px;
+    letter-spacing: 0.25px;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 0;
+}
+.footer-col ul a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    font-weight: 500;
+}
+.footer-col.col-social ul li {
+    display: inline-block;
+    margin-right: 6px;
+}
+button.menu-toggle {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.logo-left, .menu-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header {
+    position: relative;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/*location page*/
+
+.loaction-pic {
+    border: 11px solid #00444c;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 317px;
+    height: 342px;
+    overflow: hidden;
+    max-width: 100%;
+}
+.loaction-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.location-add {
+    text-align: center;
+    width: calc(100% - 318px);
+    color: #fff;
+}
+.location-add h4 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.location-add a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.location-add a span.anchor-arrow svg {    width: 15px;    height: auto; vertical-align: middle;}
+div.location-point a svg {
+    fill: #C74300;
+    width: 31px;
+    height: auto;
+    vertical-align: middle;
+}
+.location-point {
+    display: inline-block;
+    vertical-align: middle;
+}
+.location-point a {
+    transition: all 0.2s ease, visibility 0s;
+    border: 0px solid rgb(239, 239, 243);
+    background: rgba(0, 68, 76, 0.68);
+    border-radius: 15px;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    line-height: 44px;
+    text-align: center;
+}
+.new-location {
+    max-width: 430px;
+    margin: 120px auto;
+    display: block;
+}
+.new-location h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.new-location p {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.location .container {
+    width: 900px;
+}
+
+.location .container .row {
+    align-items: center;
+    margin: 0;
+}
+.location-point a:hover {
+    background-color: rgb(239, 239, 243);
+}
+/*location page*/
+
+/*contact page*/
+
+.contact h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    color: #00444C;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 76px;
+}
+.contact .container {
+    min-height: 706px;
+    width: 924px;
+}
+.contact form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 100px 0;
+}
+.join-form .field-set {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.join-form .field {
+    width: 100%;
+    padding-bottom: 24px;
+}
+.join-form .field label {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 17px;
+    color: #c7c7c7;
+}
+.join-form .field input {
+    height: 40px;
+    width: 100%;
+    background: #1c1c1c;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 16px;
+    font-family: 'Rajdhani';
+}
+.form-btn input[type="submit"] {
+    cursor: pointer;
+}
+.form-btn input[type="submit"]:hover {
+    background-color: #666666;
+}
+.join-form .field-set {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.form-btn input {
+    background: #00282c;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    line-height: normal;
+    font-size: 16px;
+    border-radius: 30px;
+}
+/*contact page*/
+
+
+/* franchise page */
+
+.join-us .container {
+    min-height: 1057px;
+    width: 900px;
+}
+.join-us h2 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 88px;
+}
+
+.join-us .join-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 0px 0;
+}
+.form-btn.join-btn {
+    max-width: 264px;
+}
+.join-us h4 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 100px;
+    letter-spacing: 4.5px;
+}
+.join-us h5 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 auto;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.dot-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+.dot-border span {
+    border-bottom: 5px dotted #fff;
+    width: 236px;
+    height: 3px;
+}
+
+@media (max-width: 1400px) {
+    .banner-text {
+    left: 14vw;
+    top: 4vw;
+}
+
+}
+
+@media (max-width: 1199px) {
+    .banner-text h1 {
+    font-size: 60px;
+    line-height: 61px;
+}
+.banner-text h1 span {
+    font-size: 40px;
+}
+.banner-text h1 strong {
+    font-size: 80px;
+}
+.banner-text h3 {
+    font-size: 24px;
+}
+.home-banner img {
+    width: 120vw;
+    max-width: 120vw;
+}
+
+.join-us h2 {    font-size: 60px;}
+}
+
+@media (max-width: 767px) {
+ul.primary-menu {
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 99;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+ul.primary-menu.open {
+    display: flex;
+}
+.container {
+    max-width: 100%;
+}
+button.menu-toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-left img {
+    max-height: 110px;
+    width: auto;
+}
+.footer-col {
+    width: 50%;
+}
+.footer-col.col-social {
+    margin-top: 20px;
+   
+}
+.banner-text h1 {
+    font-size: 40px;
+    line-height: 41px;
+}
+.banner-text h1 span {
+    font-size: 25px;
+}
+.banner-text h1 strong {
+    font-size: 50px;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+.banner-text h3 {
+    font-size: 16px;
+}
+.banner-text {
+    left: 7vw;
+    top: 8vw;
+}
+.home-banner {
+    padding-top: 70px;
+}
+.location-add {
+    width: 100%;
+    padding-top: 20px;
+}
+.loaction-pic {
+    margin: 30px auto 0;
+}
+.location-add h4 {
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+.new-location h2 {
+    font-size: 40px;
+}
+.new-location {
+    margin: 70px auto;
+ }
+ .contact h2 {
+    font-size: 36px;
+    margin-top: 46px;
+}
+.join-form .field-set {
+    gap: 14px;
+}
+.contact .container {
+    min-height: auto;
+}
+.contact form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.join-us h2 {
+    font-size: 41px;
+    padding-top: 38px;
+}
+.join-us h4 {
+    font-size: 20px;
+    padding-bottom: 50px;
+    letter-spacing: 2.5px;
+}
+.join-us h4 br {
+    display: none;
+}
+.join-us h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.join-us .join-form .field-set {
+    flex-wrap: wrap;
+    gap: 0;
+    column-gap: 10px;
+}
+.join-us .join-form .field-set .field {
+    width: calc(50% - 5px);
+}
+.form-btn.join-btn {
+    max-width: 100%;
+}
+.join-us .container {
+    min-height: auto;
+    padding-bottom: 50px;
+}
+.dot-border span {
+    width: 106px;
+}
+}
